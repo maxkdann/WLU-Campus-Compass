@@ -444,7 +444,7 @@ var mapIcons = {
             },
             'geometry':{
                 'type': 'Point',
-                'coordinates':[-80.531674,43.473292]
+                'coordinates':[-80.531474,43.473692]
             }
         },
         {
@@ -636,7 +636,7 @@ var mapIcons = {
             },
             'geometry':{
                 'type': 'Point',
-                'coordinates':[-80.531459,43.472971]
+                'coordinates':[-80.530529,43.473401]
             }
         },
         {
@@ -904,7 +904,7 @@ mapIcons.features.forEach(function(marker){
         path.reverse()
         //console.log("The node closest to where ur current location is:"+start)
         //console.log("which has lat of:"+g.get_vertex(start).latitude+" and long of: "+g.get_vertex(start).longitude)
-        //console.log('Shortest path: '+path.toString());
+        console.log('Shortest path: '+path.toString());
         for(var i = 0; i < path.length; i++){
             nodeList.push(path[i]);
         }
@@ -1303,7 +1303,7 @@ class Graph{
         this.add_vertex("coop_e",43.473951,-80.52426);
         this.add_vertex("ac_s",43.474966,-80.525896);
         this.add_vertex("frednichols_e",43.473764,-80.528539);
-        this.add_vertex("c_1",43.473292,-80.531174);
+        this.add_vertex("c_1",43.473292,-80.531674);
         this.add_vertex("c_2",43.473848,-80.531106);
         this.add_vertex("c_3",43.474129,-80.530304);
         this.add_vertex("c_4",43.474504,-80.529473);
@@ -1441,7 +1441,6 @@ class Graph{
         this.add_edge("c_29","c_30");
         
         this.add_edge("c_30","science_ne");
-        this.add_edge("c_30","science_nw");
         this.add_edge("c_30","c_31");
         this.add_edge("c_30","coop_e")
         
@@ -1450,7 +1449,6 @@ class Graph{
         
         this.add_edge("c_32","brickeracademic_n");
         this.add_edge("c_32","c_33");
-        this.add_edge("c_32","science_nw");
     //adding inter building connections
         this.add_edge("peters_se","artsc_w");
         this.add_edge("artsc_e","artse_w");
