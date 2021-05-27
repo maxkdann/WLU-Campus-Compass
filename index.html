@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <!-- IMPORTANT LINKS and refz|| ADDED THE BOTTOM META NAME = THING MIGHT HAVE TO REMOVE LATER 
+        THIS IS ALSO THE VERSION THAT HAS WORKING updatePath() or whtevz
+    -->
+    <head>
+        <title>Uni Maps</title>
+        <link rel = "stylesheet" type = "text/css" href="style.css" />
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+
+        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+
+    </head>
+
+    <!--Body area-->
+    <body>
+        <!--Add search bar within this box that has .onupdate functionality-->
+        <div class ="searchBox">
+                <!--<input type = "text" placeholder="Class room..."> THIS WAS THE INPUT BOX THING-->
+                <input
+                    type = "text"
+                    name = "searchBarjs"
+                    id = "searchBarjs"
+                    placeholder="Type a building..."
+                />
+                <ul id = "wluBuildingWrapper"></ul>
+                
+        </div>
+        
+
+        <div id='mapBox'></div>
+            <!--stores the map functions-->
+            <script src = 'map.js'></script>
+
+    <script src="app.js"></script>
+    </body>
+
+    <!--Footer area (about, contact, copyright) FIX THE BOTTOM FOOTER-->
+    <footer>
+        
+    </footer>
+    
+
+</html>
+
