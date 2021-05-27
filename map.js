@@ -1441,6 +1441,7 @@ class Graph{
         this.add_edge("c_29","c_30");
         
         this.add_edge("c_30","science_ne");
+        this.add_edge("c_30","science_nw");
         this.add_edge("c_30","c_31");
         this.add_edge("c_30","coop_e")
         
