@@ -1,0 +1,2 @@
+all images are 150px by 113px
+this may need to get changed in the future.
