@@ -1303,7 +1303,7 @@ class Graph{
         this.add_vertex("coop_e",43.473951,-80.52426);
         this.add_vertex("ac_s",43.474966,-80.525896);
         this.add_vertex("frednichols_e",43.473764,-80.528539);
-        this.add_vertex("c_1",43.473292,-80.531674);
+        this.add_vertex("c_1",43.473292,-80.531174);
         this.add_vertex("c_2",43.473848,-80.531106);
         this.add_vertex("c_3",43.474129,-80.530304);
         this.add_vertex("c_4",43.474504,-80.529473);
