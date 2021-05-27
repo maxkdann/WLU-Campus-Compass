@@ -222,7 +222,7 @@ var mapIcons = {
         {
             'type': 'Feature',
             'properties':{
-                'description': 'Peters Building South West.',
+                'description': 'Peters Building South West Entrance.',
                 'name': 'peters_sw',
                 'iconSize': [15,15]
             },
@@ -234,7 +234,7 @@ var mapIcons = {
         {
             'type': 'Feature',
             'properties':{
-                'description': 'Peters Building North West.',
+                'description': 'Peters Building North West Entrance.',
                 'name': 'peters_nw',
                 'iconSize': [15,15]
             },
@@ -246,7 +246,7 @@ var mapIcons = {
         {
             'type': 'Feature',
             'properties':{
-                'description': 'Schliegel Building, Entrance.',
+                'description': 'Schliegel Building, East Entrance.',
                 'name': 'schliegel_e',
                 'iconSize': [15,15]
             },
@@ -258,7 +258,7 @@ var mapIcons = {
         {
             'type': 'Feature',
             'properties':{
-                'description': 'Schliegel Building, North West.',
+                'description': 'Schliegel Building, North West Entrance.',
                 'name': 'schliegel_nw',
                 'iconSize': [15,15]
             },
@@ -1353,12 +1353,14 @@ class Graph{
         this.add_edge("c_4","dh_w");
         this.add_edge("c_4","c_5");
         this.add_edge("c_4","laz_sw");
-        
+        this.add_edge("c_4","music_ne")
+        this.add_edge("c_4","artsc_e")
+
         this.add_edge("c_5","laz_se")
         this.add_edge("c_5","music_ne");
         this.add_edge("c_5","c_11");
         this.add_edge("c_5","c_6");
-        
+
         this.add_edge("c_6","c_9");
         this.add_edge("c_6","c_7");
         
@@ -1375,6 +1377,7 @@ class Graph{
         
         this.add_edge("c_11","c_12");
         this.add_edge("c_11","c_33");
+        this.add_edge("c_11","music_e");
         
         this.add_edge("c_12","music_sw");
         this.add_edge("c_12","dh_s");
@@ -1454,6 +1457,7 @@ class Graph{
         this.add_edge("artsc_e","artse_w");
         this.add_edge("dawb_s","frednichols_e");
         this.add_edge("music_ne","laz_se")
+        this.add_edge("music_ne","music_e")
         this.add_edge("laz_se","laz_sw")
         this.add_edge("laz_n","laz_se")
         this.add_edge("laz_se","c_5");
