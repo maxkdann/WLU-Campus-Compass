@@ -1450,6 +1450,7 @@ class Graph{
         
         this.add_edge("c_32","brickeracademic_n");
         this.add_edge("c_32","c_33");
+        this.add_edge("c_32","science_nw");
     //adding inter building connections
         this.add_edge("peters_se","artsc_w");
         this.add_edge("artsc_e","artse_w");
