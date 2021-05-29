@@ -1,7 +1,6 @@
 
 
 .searchBox::-webkit-scrollbar{
-<<<<<<< HEAD
     width: 0.5625em;
     background-color: lightgray;
     border-radius: 0.3125em;
@@ -28,35 +27,6 @@
 }
 .wluBuildingsItems > p{
     font-size: 0.5625em;
-=======
-    width: 9px;
-    background-color: lightgray;
-    border-radius: 5px;
-    padding-right: 5px;
-}
-.searchBox::-webkit-scrollbar-thumb{
-    background-color: grey;
-    border-radius: 50px;
-}
-.searchBox{
-    height: 600px;
-    width: 450px;
-    border: 5px solid black;
-    padding: 20px;
-    margin: 25px 0px 0px 40px;
-    float: left;
-    position: relative;
-    overflow-y: scroll;
-    border-radius: 10px;
-}
-
-.searchBar input[type=text]{
-    margin: 0px 0px 0px 45px;
-    width: 150px;
-}
-.wluBuildingsItems > p{
-    font-size: 9px;
->>>>>>> aa0f2005498318e47a36e644f98abb17299ba5cf
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -65,7 +35,6 @@
     maybe not a div?
 */
 .mapboxgl-popup{
-<<<<<<< HEAD
     max-width: 25em;
     font: 0.75em/1.25em 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
@@ -81,35 +50,6 @@
     float: right;
 }
 
-=======
-    max-width: 400px;
-    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-.footer{
-    padding-top: 50px;
-    border: 5px solid green;
-    float: right;
-}
-
-.marker{
-    background-image: url('images/inactive_node.png');
-}
-#mapBox{
-    border: 5px solid black;
-    border-radius: 15px;
-    width: 1200px;
-    height: 600px;
-    padding: 20px;
-    margin: 25px 40px;
-    float: right;
-}
-
-#mapImage{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
->>>>>>> aa0f2005498318e47a36e644f98abb17299ba5cf
 #wluBuildingWrapper{
     list-style-type: none;
     display: grid;
@@ -120,7 +60,6 @@
 #wluBuildingsItemsContainer{
     position: relative;
     display: grid;
-<<<<<<< HEAD
     right: 1.125em;
     
 }
@@ -174,9 +113,3 @@ max-width = 0 - 2400 and so on and so forth
         margin-right: auto;
     }
 }
-=======
-    right: 18px;
-    
-}
-
->>>>>>> aa0f2005498318e47a36e644f98abb17299ba5cf
