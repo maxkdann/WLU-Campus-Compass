@@ -5,15 +5,24 @@ let wluRooms = [];
 
 const wluBuildings =[
     {name: "Fred Nichols Campus Centre",description: "Hub",img: "images/fredniccc.png",pos: []},
-    {name: "Athletic Complex (ac)",description: "Gym",img: "", pos: []},
-    {name: "Lazaridis Hall (laz)",description: "",img: "",pos: [] },
+    {name: "Athletic Complex (ac)",description: "Gym",img: "images/athleticcomp.png", pos: []},
+    {name: "Lazaridis Hall (North)",description: "Lazaridis Hall North Entrance",img: "images/lazn.png",pos: [] },
     {name: "Dr. Alvin Woods Building Front (dawb front)",description: "",img: "images/dawbfront.png",pos:[]},
     {name: "Dr. Alvin Woods Building Side (dawb side)",description: "The side of dawb",img:"images/dawbside.png",pos: []},
-    {name: "Arts (ace)",description: "Arts Building",img:"images/artsace.png",pos:[]},
+    {name: "Arts",description: "Arts Building",img:"images/artsace.png",pos:[]},
     {name: "Library",description: "Library",img:"images/library.png",pos: []},
     {name: "Concourse (back)",description: "concourse back",img:"images/concback.png",pos: []},
-    {name: "Franklin C. Peters Building ",description: "Franklin Building",img:"images/frankcpb.png",pos: []
-    }
+    {name: "Franklin C. Peters Building ",description: "Franklin Building",img:"images/frankcpb.png",pos: []},
+    {name: "Arts West", description: " Arts Building West Entrance", img: "images/artswest.png", pos: []},
+    {name: "Bricker Academic (North)", description: "Bricker Academic North Entrance", img: "images/banorth.png", pos: []},
+    {name: "Co-op Building", description: "Co-op Building Entrance", img: "images/coop.png", pos: []},
+    {name: "Lazaridis Hall (South East)", description: "Lazaridis Hall South East Entrance", img: "images/lazse.png", pos: []},
+    {name: "Lazaridis Hall (South West)", description: "Lazaridis Hall South West Entrance", img: "images/lazsw.png", pos: []},
+    {name: "Music Building", description: "Music Building East Entrance", img: "images/musiceast.png", pos: []},
+    {name: "Science Building", description: "Science Building North Entrance", img: "images/sciencenorth.png", pos: []},
+    {name: "Science Building", description: "Science Building North West Entrance", img: "images/sciencenorthw.png", pos: []},
+    {name: "Science Building", description: "Science Building South East Entrance", img: "images/sciencesouthe.png", pos: []},
+    {name: "Science Building", description: "Science Building South West Entrance", img: "images/sciencesouthw.png", pos: []}
 ];
 //console.log(window.searchBarjs);
 //console.log(searchBarjs);
