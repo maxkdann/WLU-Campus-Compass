@@ -831,7 +831,7 @@ var markerArray2 = [];
 var map = new mapboxgl.Map({
     container: 'mapBox',
     center: [-80.5278, 43.4740],
-    zoom: 17,
+    zoom: 16.65,
     style: 'mapbox://styles/mapbox/streets-v11'
     });
 
@@ -965,8 +965,8 @@ function updatePath(nodeList,elArray){
     
 }
 
-function test(elArray){
-        dest_node = document.getElementById("searchDiv").className;
+function onclickSearchBar(elArray,e){
+        dest_node = e.target.className;
         console.log("The node you just clicked on is:"+dest_node)
         //console.log('name is: ' + dest_node);
         //these variables should be replaced with curr location data

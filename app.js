@@ -41,8 +41,10 @@ searchBarjs.addEventListener('keyup', (e) =>{ //anytime a key is pressed then up
 //1. On click, update and highlight the node you are to travel to
 //2. Then plot the path
 wluBuildingWrapper.addEventListener('click', function (e) {
-
+    console.log("You just clicked on: " + document.getElementById("searchDiv").className);
+    console.log("This is e.target: " + e.target.className);
 });
+
 //current issue is getting the stuff to load
 const loadRooms = async()=>{
     try{
@@ -54,15 +56,16 @@ const loadRooms = async()=>{
         console.log(error);
     }
 };
+
 //<p>Description: ${building.description}</p> taken from inside wluBuildingsItems <li>
 const displayRooms = (wluRooms)=>{
     const htmlString = wluRooms
         .map((building) =>{
             return `
             <div class = ${building.graph_name} id = searchDiv>
-                <li class=wluBuildingsItems>
-                    <p>${building.name}</p> 
-                    <img id = wluImage src =${building.img}></img>
+                <li id=wluBuildingsItems class = ${building.graph_name}>
+                    <p >${building.name}</p> 
+                    <img id = wluImage src =${building.img} class = ${building.graph_name} ></img>
                 </li>
             </div>
             `;
@@ -71,6 +74,7 @@ const displayRooms = (wluRooms)=>{
     wluBuildingWrapper.innerHTML = htmlString; 
     //console.log(wluBuilding);    
 };
-//COPY PASTED FROM MAIN
+
 
 loadRooms();
+
