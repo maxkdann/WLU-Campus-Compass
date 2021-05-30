@@ -965,7 +965,39 @@ function updatePath(nodeList,elArray){
     
 }
 
-
+function test(elArray){
+        dest_node = document.getElementById("searchDiv").className;
+        console.log("The node you just clicked on is:"+dest_node)
+        //console.log('name is: ' + dest_node);
+        //these variables should be replaced with curr location data
+        //start coordinates currently set to ac
+        var start_lat = posArr[1];
+        var start_long = posArr[0];
+        //console.log("your current location is:"+posArr.toString())
+        var g = new Graph();
+        g.loadGraph();
+        //g.display_graph(); uncomment if you wanna see the whole graph
+        var start = g.get_closest_node_to_curr_location(start_lat,start_long);
+        var end = g.get_vertex(dest_node);
+        g.dijkstra(g.get_vertex(start),g.get_vertex(dest_node));
+        var target = g.get_vertex(dest_node);
+        var path = [];
+        path.push(target.get_id());
+        path = g.shortest(target,path);
+        path.reverse()
+        //console.log("The node closest to where ur current location is:"+start)
+        //console.log("which has lat of:"+g.get_vertex(start).latitude+" and long of: "+g.get_vertex(start).longitude)
+        console.log('Shortest path: '+path.toString());
+        for(var i = 0; i < path.length; i++){
+            nodeList.push(path[i]);
+        }
+        //reset node icons
+        resetPath(elArray);
+        //update node icons
+        updatePath(nodeList,elArray,markerArray);
+        //clearing nodeList after updating all nodes
+        nodeList = [];
+}
 navigator.geolocation.getCurrentPosition(success,failure);
 //console.log(posArr);
 //-------------GRAPH CODE----------------------

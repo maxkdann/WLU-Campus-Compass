@@ -16,9 +16,9 @@
     border: 0.25em solid black;
     margin: 1.5625em 0em 0em 2.5em;
     float: left;
-   
     overflow-y: scroll;
     border-radius:0.625em;
+    
 }
 
 .searchBar input[type=text]{
@@ -39,6 +39,9 @@
     font: 0.75em/1.25em 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+#searchDiv{
+    cursor: pointer;
+}
 
 #mapBox{
     border: 0.35em solid black;
@@ -89,12 +92,18 @@ max-width = 0 - 2400 and so on and so forth
         margin-right: auto;
     }
 }
+/*
+Red border = mobile phones
+*/
 @media screen and (max-width: 1300px){
     .searchBox, #mapBox{
         float: none !important;
         border-color: red;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #mapBox{
+        width: 50em !important;
     }
 }
 @media screen and (max-width: 900px){
