@@ -13,20 +13,21 @@
 
     <!--Body area-->
     <body>
-
-        <!--Add search bar within this box that has .onupdate functionality & clicky clicks-->
-        <div class ="searchBox" onclick="onclickSearchBar(elArray,event)">
-                <input
-                    type = "text"
-                    name = "searchBarjs"
-                    id = "searchBarjs"
-                    placeholder="Search for a building..."
-                />
-                <ul id = "wluBuildingWrapper"></ul>
-                
+        <div><!--Add search bar within this box that has .onupdate functionality & clicky clicks-->
+            <div class ="searchBox" onclick="onclickSearchBar(elArray,event)" style = "float: left">
+                    <input
+                        type = "text"
+                        name = "searchBarjs"
+                        id = "searchBarjs"
+                        placeholder="Search for a building..."
+                    />
+                    <ul id = "wluBuildingWrapper"></ul>
+                    
+            </div>
+            
+            <div id='mapBox' style = "float: left"></div>
         </div>
         
-        <div id='mapBox'></div>
             <!--stores the map functions-->
     <script src = 'map.js'></script>
 
