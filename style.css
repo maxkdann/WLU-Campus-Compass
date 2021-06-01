@@ -100,7 +100,7 @@ Red border = mobile phones
         margin-right: auto;
     }
     #mapBox{
-        width: 65em !important;
-        border: 1px solid red;
+        width: 70em !important;
+        border: 1em solid red !important;
     }
 }
