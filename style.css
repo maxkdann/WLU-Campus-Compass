@@ -75,8 +75,9 @@
 }
 
 /*
-    Mobile Device CSS
+    Mobile Device CSS Section
 */
+/*Vertically Held*/
 @media screen and (max-width: 1300px){
     .searchBox, #mapBox{
         margin-left: auto !important;
@@ -88,7 +89,6 @@
         
     }
     .searchBox{
-        height: 102.5em !important;
-        border: 0.1em solid purple !important;
+        height: 101em !important;
     }
 }
