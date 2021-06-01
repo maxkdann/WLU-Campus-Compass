@@ -98,7 +98,6 @@ Red border = mobile phones
     .searchBox, #mapBox{
         margin-left: auto !important;
         margin-right: auto !important;
-        height: 75em !important;
     }
     #mapBox{
         width: 55em !important;
@@ -106,6 +105,7 @@ Red border = mobile phones
         
     }
     .searchBox{
-        height: 100em !important;
+        height: 90em !important;
+        width: 10em !important;
     }
 }
