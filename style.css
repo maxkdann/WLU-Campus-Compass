@@ -96,11 +96,11 @@ Red border = mobile phones
 */
 @media screen and (max-width: 1300px){
     .searchBox, #mapBox{
-        margin-left: auto;
-        margin-right: auto;
-        border: 1em solid red !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        height: 75em !important;
     }
     #mapBox{
-        width: 45em !important;
+        width: 50em !important;
     }
 }
