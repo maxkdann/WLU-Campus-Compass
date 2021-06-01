@@ -76,11 +76,12 @@
 
 /*
     Mobile Device CSS
+     margin-left: auto !important;
+        margin-right: auto !important;
 */
 @media screen and (max-width: 1300px){
     .searchBox, #mapBox{
-        margin-left: auto !important;
-        margin-right: auto !important;
+       
     }
     #mapBox{
         width: 55em !important;
@@ -88,7 +89,6 @@
         
     }
     .searchBox{
-        height: 85em !important;
-        width: 14em !important;
+        height: 90em !important;
     }
 }
