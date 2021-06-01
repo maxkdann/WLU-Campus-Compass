@@ -102,10 +102,10 @@ Red border = mobile phones
     }
     #mapBox{
         width: 55em !important;
-        height: 100em !important;
+        height: 130em !important;
         border: 0.5em solid blue  !important;
     }
     .searchBox{
-        height: 80em !important;
+        height: 1000em !important;
     }
 }
