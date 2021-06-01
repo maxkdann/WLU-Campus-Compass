@@ -88,7 +88,7 @@
         
     }
     .searchBox{
-        height: 98em !important;
-        border: 0.1em solid blue !important;
+        height: 100em !important;
+        border: 0.1em solid red !important;
     }
 }
