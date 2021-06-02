@@ -1,3 +1,6 @@
+/*
+    Classes
+*/
 .searchBox::-webkit-scrollbar{
     width: 0.5625em;
     background-color: lightgray;
@@ -10,9 +13,9 @@
     
 }
 .searchBox{
-    height: 56.5em;
+    height: 55.5em;
     width: 15em;
-    margin: 1.5625em 0em 0em 2.5em;
+    margin: 0.5em;
     float: left;
     overflow-y: scroll;
     border-radius:0.625em;
@@ -25,23 +28,36 @@
     
 }
 
-.wluBuildingsItems > p{
-    font-size: 0.5625em;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-/*
-    WORK ON .FOOTER IN MAKING IT HAVE MULTIPLE PAGES: 
-    maybe not a div?
-*/
 .mapboxgl-popup{
     max-width: 25em;
-    font: 0.75em/1.25em 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font: 0.75em/1.25em;
+    font-family: 'Noto Sans JP', sans-serif;
 }
+
+/*
+    Nav Bar
+*/ 
+  
+  /* Style the links inside the navigation bar */
+  .navbar{
+    list-style:none;
+    text-align:center;
+    margin: 0;
+    border: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.navbar li{
+    display:inline;
+}
+  
+/*
+    ID's
+*/
 #searchBarjs{
     border: 0.2em solid black ;
     border-radius: 0.35em;
     margin-left: 0.25em;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 #searchDiv{
@@ -51,9 +67,9 @@
 #mapBox{
     border-radius: 0.625em;
     width: 133em;
-    height: 75em;
-    padding-left: 50px;
-    margin: 2em 2.5em;
+    height: 74em;
+    padding-left: 51px;
+    margin: 0.5em;
     float: right;
 }
 
@@ -74,6 +90,9 @@
     border-radius: 2em;
 }
 
+#searchP{
+    font-family: 'Noto Sans JP', sans-serif;
+}
 /*
 mobile device section
 

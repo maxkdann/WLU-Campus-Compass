@@ -5,6 +5,8 @@
     -->
     <head>
         <title>Uni Maps</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
         <link rel = "stylesheet" type = "text/css" href="style.css" />
         <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
@@ -13,7 +15,13 @@
 
     <!--Body area-->
     <body>
-        <div><!--Add search bar within this box that has .onupdate functionality & clicky clicks-->
+        <!--Navigation Bar-->
+        <ul class = "navbar">
+            <li><a href = "/index.html">Home</a></li>
+            <li><a href = "/about.html">About</a></li>
+        </ul>
+
+        <!--Add search bar within this box that has .onupdate functionality & clicky clicks-->
             <div class ="searchBox" onclick="onclickSearchBar(elArray,event)" style = "float: left">
                     <input
                         type = "text"
@@ -26,7 +34,7 @@
             </div>
             
             <div id='mapBox' style = "float: left"></div>
-        </div>
+        
         
             <!--stores the map functions-->
     <script src = 'map.js'></script>

@@ -756,7 +756,7 @@ var mapIcons = {
             },
             'geometry':{
                 'type': 'Point',
-                'coordinates':[-80.524646,43.472932]
+                'coordinates':[-80.524820,43.472992]
             }
         },
         {
@@ -960,7 +960,7 @@ function updatePath(nodeList,elArray){
     //changing the background images of only the boys
     for(var i = 0; i < indexArray.length; i++){
         //console.log(indexArray[i]);
-        elArray[indexArray[i]].style.backgroundImage = 'url(images/active_node_redone.png)';
+        elArray[indexArray[i]].style.backgroundImage = 'url(images/umactive.png)';
     }
     
 }
@@ -1462,10 +1462,12 @@ class Graph{
                this.add_edge("c_28","science_se");
                
                this.add_edge("c_29","c_30");
+               this.add_edge("c_29,science_se");
                
                this.add_edge("c_30","science_ne");
                this.add_edge("c_30","c_31");
                this.add_edge("c_30","coop_e")
+               this.add_edge("c_30,science_nw");
                
                this.add_edge("c_31","c_32");
                this.add_edge("c_31","science_nw");
