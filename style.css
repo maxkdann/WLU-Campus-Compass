@@ -75,9 +75,25 @@
 }
 
 /*
-    Mobile Device CSS Section
+mobile device section
+
+each function counts as a break point
+max-width = 0 - 2400 and so on and so forth
+
+1. Make the .search box positioned in the center at the yellow border colour
+2. make mapBox change div width when the window is resized
 */
-/*Vertically Held*/
+
+@media screen and (max-width: 2400px) {
+    .searchBox, #mapBox{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*
+Red border = mobile phones
+*/
 @media screen and (max-width: 1300px){
     .searchBox, #mapBox{
         margin-left: auto !important;

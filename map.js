@@ -960,7 +960,7 @@ function updatePath(nodeList,elArray){
     //changing the background images of only the boys
     for(var i = 0; i < indexArray.length; i++){
         //console.log(indexArray[i]);
-        elArray[indexArray[i]].style.backgroundImage = 'url(images/active_node.png)';
+        elArray[indexArray[i]].style.backgroundImage = 'url(images/active_node_redone.png)';
     }
     
 }
