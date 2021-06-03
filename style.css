@@ -93,14 +93,47 @@
 #searchP{
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 /*
-mobile device section
+    About Page Styling
+*/
 
-each function counts as a break point
-max-width = 0 - 2400 and so on and so forth
+#connordiv{
+    float:left;
+    width: 50em;
+}
 
-1. Make the .search box positioned in the center at the yellow border colour
-2. make mapBox change div width when the window is resized
+#connordiv > p{
+    text-align: left;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#connordiv > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#maxdiv{
+    float:left;
+    padding-left: 15em;
+    width: 50em;
+}
+
+#maxdiv > p{
+    text-align: left;
+    font-family: 'Noto Sans JP', sans-serif;;
+}
+
+#maxdiv > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*
+    Change in Screen Size Styling
 */
 
 @media screen and (max-width: 2400px) {
