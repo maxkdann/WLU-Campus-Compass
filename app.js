@@ -11,7 +11,7 @@ const wluBuildings =[
     {name: "Dr. Alvin Woods Building Side (dawb side)",description: "The side of dawb",img:"images/dawbside.png",pos: [], graph_name: "dawb_s"},
     {name: "Arts",description: "Arts Building",img:"images/artsace.png",pos:[], graph_name: "artsc_s"},
     {name: "Library",description: "Library",img:"images/library.png",pos: [], graph_name: "library_e"},
-    {name: "Concourse (Back)",description: "concourse back",img:"images/concback.png",pos: [], graph_name: ""},
+   // {name: "Concourse (Back)",description: "concourse back",img:"images/concback.png",pos: [], graph_name: ""},
     {name: "Franklin C. Peters Building ",description: "Franklin Building",img:"images/frankcpb.png",pos: [], graph_name: "schliegel_e"},
     {name: "Arts West", description: " Arts Building West Entrance", img: "images/artswest.png", pos: [], graph_name: "artsc_w"},
     {name: "Bricker Academic (North)", description: "Bricker Academic North Entrance", img: "images/banorth.png", pos: [], graph_name: "brickeracademic_n"},
