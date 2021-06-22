@@ -832,7 +832,7 @@ var map = new mapboxgl.Map({
     container: 'mapBox',
     center: [-80.5278, 43.4740],
     zoom: 16.65,
-    style: 'mapbox://styles/mapbox/streets-v11'
+    style: 'mapbox://styles/mapbox/streets-v11?optimize=true'
     });
 
 
@@ -840,7 +840,8 @@ var map = new mapboxgl.Map({
 map.addControl(
     new mapboxgl.GeolocateControl({
         positionOptions:{
-            enableHighAccuracy: true
+            enableHighAccuracy: true,
+            
         },
         trackUserLocation: true,
         showAccuracyCircle: false
@@ -941,28 +942,32 @@ function resetPath(elArray){
 //this updates the node icons based on the algo and user input
 function updatePath(nodeList,elArray){
     var indexArray = [];
-    
+    var compareArray = [];
     //markerArray2 is an array that only has the names of markerArray.properties.names
     for(var i = 0; i < markerArray.length; i++){
         markerArray2.push(markerArray[i].properties.name);  
     }
-    
-   // console.log("markerArray: " +markerArray);
-    //console.log("markerArray2: "+markerArray2);
-    //empty marker array
-    //markerArray = [];
-    //this outputs the indexs of markerArray2 that share elements with nodeList
-    //console.log(nodeList.map(value => markerArray2.findIndex(thingInMarker => thingInMarker === value)));
     //this puts the above console output into index array
     indexArray = nodeList.map(value => markerArray2.findIndex(thingInMarker => thingInMarker === value));
     //console.log("this is index array: " + indexArray);
-
-    //changing the background images of only the boys
+    
+    //changing the background images of only the nodes in nodelist
     for(var i = 0; i < indexArray.length; i++){
-        //console.log(indexArray[i]);
+        console.log(markerArray[indexArray[i]]);
+        console.log(markerArray);
+        compareArray.push(markerArray[indexArray[i]]);
         elArray[indexArray[i]].style.backgroundImage = 'url(images/umactive.png)';
     }
-    
+
+    //interval that compares user location and node location every 2000 miliseconds (2 seconds)
+    setInterval(function(){
+       console.log("here");
+       for(var i = 0; i < compareArray.length; i++){
+           if(posArr[0] == compareArray[i].geometry.coordinates[0] && posArr[1] == compareArray[i].geometry.coordinates[1]){
+               elArray[indexArray[i]].style.backgroundImage = 'url(images/completed_node_green)';
+           }
+       }
+   }, 2000)
 }
 
 function onclickSearchBar(elArray,e){
