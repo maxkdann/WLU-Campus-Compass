@@ -1358,8 +1358,11 @@ class Graph{
         this.add_vertex("c_31",43.473303,-80.526500);
         this.add_vertex("c_32",43.473267,-80.526909);
         this.add_vertex("c_33",43.473701,-80.527229);
+        this.add_vertex("Sigma Chi Fraternity",43.475469,-80.532921);
 
                //add edges
+               this.add_edge("Sigma Chi Fraternity","c_1");
+
                this.add_edge('c_1','peters_nw');
                this.add_edge("c_1","c_2");
                this.add_edge("c_1","c_17");
