@@ -14,8 +14,9 @@ var mapIcons = {
     'type': 'FeatureCollection',
     //array of json
     'features': [
+        
         {
-            //testing popup area
+            
             'type': 'Feature',
             'properties':{
                 'description': 'Lazaridis School of Business and Economics, South East Entrance.',
@@ -819,6 +820,19 @@ var mapIcons = {
                 'coordinates':[-80.527229,43.473701]
             }
         },
+        {
+            'type': 'Feature',
+            'properties':{
+                'description': 'connor home',
+                'name': 'sc',
+                'iconSize': [30,30]
+            },
+            'geometry':{
+                'type': 'Point',
+                'coordinates':[-80.53391359999999,43.4864128]
+            }
+        }
+        
     ]
 };
 //el array
@@ -1358,10 +1372,10 @@ class Graph{
         this.add_vertex("c_31",43.473303,-80.526500);
         this.add_vertex("c_32",43.473267,-80.526909);
         this.add_vertex("c_33",43.473701,-80.527229);
-        this.add_vertex("Sigma Chi Fraternity",43.475469,-80.532921);
-
+        this.add_vertex("sc",43.4864128,-80.53391359999999);
+        //[-80.53391359999999,43.4864128]
                //add edges
-               this.add_edge("Sigma Chi Fraternity","c_1");
+               this.add_edge("sc","c_1");
 
                this.add_edge('c_1','peters_nw');
                this.add_edge("c_1","c_2");
