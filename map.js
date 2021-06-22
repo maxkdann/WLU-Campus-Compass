@@ -1383,6 +1383,7 @@ class Graph{
                this.add_edge("c_5","c_6");
        
                this.add_edge("c_6","c_9");
+               this.add_edge("c_6","ac_s");
                this.add_edge("c_6","c_7");
                
                this.add_edge("c_7","c_8");
