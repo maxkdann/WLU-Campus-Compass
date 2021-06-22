@@ -820,18 +820,6 @@ var mapIcons = {
                 'coordinates':[-80.527229,43.473701]
             }
         },
-        {
-            'type': 'Feature',
-            'properties':{
-                'description': 'connor home',
-                'name': 'sc',
-                'iconSize': [30,30]
-            },
-            'geometry':{
-                'type': 'Point',
-                'coordinates':[-80.53391359999999,43.4864128]
-            }
-        }
         
     ]
 };
@@ -978,7 +966,7 @@ function updatePath(nodeList,elArray){
        console.log("here");
        for(var i = 0; i < compareArray.length; i++){
            if(posArr[0] == compareArray[i].geometry.coordinates[0] && posArr[1] == compareArray[i].geometry.coordinates[1]){
-               elArray[indexArray[i]].style.backgroundImage = 'url(images/completed_node_green)';
+               elArray[indexArray[i]].style.backgroundImage = 'url(images/completed_node_green.png)';
            }
        }
    }, 2000)
@@ -1372,10 +1360,6 @@ class Graph{
         this.add_vertex("c_31",43.473303,-80.526500);
         this.add_vertex("c_32",43.473267,-80.526909);
         this.add_vertex("c_33",43.473701,-80.527229);
-        this.add_vertex("sc",43.4864128,-80.53391359999999);
-        //[-80.53391359999999,43.4864128]
-               //add edges
-               this.add_edge("sc","c_1");
 
                this.add_edge('c_1','peters_nw');
                this.add_edge("c_1","c_2");
