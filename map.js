@@ -970,11 +970,11 @@ function updatePath(nodeList,elArray){
         let distance = Math.sqrt((posArr[0]-compareArray[i].geometry.coordinates[0])*(posArr[0]-compareArray[i].geometry.coordinates[0]) + (posArr[1] - compareArray[i].geometry.coordinates[1]) *(posArr[1] - compareArray[i].geometry.coordinates[1]));
         console.log(distance);
         //maybe change < n via testing to find accurate position
-           if(distance < 0.000420){
+           if(distance < 0.00035){
                elArray[indexArray[i]].style.backgroundImage = 'url(images/completed_node_green.png)';
            }
        }
-   }, 2000)
+   }, 1750)
 }
 
 function onclickSearchBar(elArray,e){
