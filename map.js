@@ -960,12 +960,17 @@ function updatePath(nodeList,elArray){
         compareArray.push(markerArray[indexArray[i]]);
         elArray[indexArray[i]].style.backgroundImage = 'url(images/umactive.png)';
     }
-
+    //Math.sqrt((to.latitude-frm.latitude)*(to.latitude-frm.latitude)+(to.longitude-frm.longitude)*(to.longitude-frm.longitude));
+    //less than 0.1
+    
     //interval that compares user location and node location every 2000 miliseconds (2 seconds)
     setInterval(function(){
-       console.log("here");
+       
        for(var i = 0; i < compareArray.length; i++){
-           if(posArr[0] == compareArray[i].geometry.coordinates[0] && posArr[1] == compareArray[i].geometry.coordinates[1]){
+        let distance = Math.sqrt((posArr[0]-compareArray[i].geometry.coordinates[0])*(posArr[0]-compareArray[i].geometry.coordinates[0]) + (posArr[1] - compareArray[i].geometry.coordinates[1]) *(posArr[1] - compareArray[i].geometry.coordinates[1]));
+        console.log(distance);
+        //maybe change < n via testing to find accurate position
+           if(distance < 0.000420){
                elArray[indexArray[i]].style.backgroundImage = 'url(images/completed_node_green.png)';
            }
        }
