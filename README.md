@@ -6,4 +6,4 @@ This is a project taken on in an attempt to create a "google maps for laurier" b
 Backend uses Dijkstras algorithm to find the shortest path between nodes.
 
 View the site here:
-https://maxkdann.github.io/Uni-Map/
+https://maxkdann.github.io/WLU-Campus-Compass/
